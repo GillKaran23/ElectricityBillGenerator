@@ -13,7 +13,7 @@ public class DBLoader {
             Class.forName("com.mysql.cj.jdbc.Driver");
 //            System.out.println("Driver loading done");
             
-            Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/electricitybillgenerator", "root", "k@r@n");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/electricitybillgenerator", "root", "your_mysql_password");
 //            System.out.println("Connection done");
             
             Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
